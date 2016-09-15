@@ -63,7 +63,7 @@ public class FactorizerBot extends TelegramLongPollingBot {
                 //sendMessage(out.keySet().stream().sorted(BigInteger::compareTo).map(t -> out.get(t).compareTo(BigInteger.ONE)==0 ? "" + t : String.format("%d^%d", t, out.get(t))).collect(Collectors.joining("  ")), message);
             } catch (Exception e) {
                 e.printStackTrace();
-                sendMessage("NaN", message);
+                sendMessage("Error: not a long number (<2^63)", message);
             }
         }
     }
