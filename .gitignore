@@ -1,6 +1,8 @@
-.idea/*
+build/*
 .gradle/*
 gradle/*
+.idea/*
 gradlew
 gradlew.bat
-build/*
+settings.gradle
+start
